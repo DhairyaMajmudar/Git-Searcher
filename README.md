@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Git Searcher - Github User Search Application.
 
-## Getting Started
 
-First, run the development server:
+Gir Searcher is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup Guide
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Install the packages with the script `npm i` or `npm Install` 
+2. Now create the Github access token by:
+a. Go to Settings.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+b. Open Developer Settings.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+c. Head to Personal Access Token Tab (Tokens Classic)
 
-## Learn More
+d. Generate a new token and copy it ( Token can be viewed only once so its recommend to store it properly ! ).
 
-To learn more about Next.js, take a look at the following resources:
+3. Generate env variables
+a. Create a new `.env` file in the root folder and copy the contents of `.env.example` in it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+b. Paste the github token.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+c. now run the application using the script `npm run dev`.
 
-## Deploy on Vercel
+## Tech Stak used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- NextJs
+- TypeScript
+- Tailwind
+- Github GraphQl API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## About Github Searcher
+
+Github Searcher is a web apllication from which user can find the information of other github users just by searching their username. 
+
+Rather using traditional REST API the application uses the power of GraphQl Query to fetch only the required information from the API which results in decreased use of bandwidth and increasing the performance.
+
+Other than that being built on the top of Nextjs makes application server side, using tailwind for styling makes the website to look more modular and user friendly.
+
+Type saftey is taken utmost care with the help of TypeScript resulting in decreased number of bugs.
+
+
+`Made with love by Dhairya Majmudar`
